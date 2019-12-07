@@ -28,7 +28,7 @@
 
 ### In Landscape
 
-![Image of LandscapeSimpleNeverthinkApp](http://umuthan.com/wp-content/uploads/2019/12/landscape.png)
+![Image of LandscapeSimpleNeverthinkApp](http://umuthan.com/wp-content/uploads/2019/12/landscape_.png)
 
 ## Dependencies
 
