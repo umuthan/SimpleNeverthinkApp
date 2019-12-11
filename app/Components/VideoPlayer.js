@@ -19,7 +19,7 @@ import {
 
 import YouTube from 'react-native-youtube';
 
-class Video extends Component {
+class VideoPlayer extends Component {
 
   constructor() {
 
@@ -249,4 +249,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Video;
+export default VideoPlayer;

@@ -18,7 +18,7 @@ import {
   Dimensions
 } from 'react-native';
 
-import Video from './app/Components/Video';
+import VideoPlayer from './app/Components/VideoPlayer';
 import Channels from './app/Components/Channels';
 import { channels } from './app/Data/Data';
 
@@ -62,7 +62,7 @@ class App extends Component {
   * using for extracting watchedVideos array
   * and currentChannelVideos array.
   */
-  operation = (list1, list2, isUnion) => {
+  arrayOperation = (list1, list2, isUnion) => {
     const result = [];
 
     for (let i = 0; i < list1.length; i++) {
@@ -106,7 +106,7 @@ class App extends Component {
     * RemainingVideos array from extracting
     * watchedVideos array and currentChannelVideo array
     */
-    let remainingVideos = this.operation(currentChannelVideos,this.state.watchedVideos);
+    let remainingVideos = this.arrayOperation(currentChannelVideos,this.state.watchedVideos);
 
   /**
     * If all videos ended, play the current channel playlist again
@@ -166,7 +166,7 @@ class App extends Component {
           // Change the style when orientation changed
           orientation === 'portrait' ? styles.container : styles.containerLandscape
         }>
-          <Video
+          <VideoPlayer
             style={styles.video}
             videoID={currentVideo}
             updateWatchedVideosCallback={this.updateWatchedVideos}
